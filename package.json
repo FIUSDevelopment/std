@@ -1,0 +1,27 @@
+{
+  "name": "@fiusdevelopment/std",
+  "version": "0.0.1",
+  "description": "Standard module for javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FIUSDevelopment/std.git"
+  },
+  "keywords": [
+    "std",
+    "standard",
+    "npmjs",
+    "npm",
+    "module",
+    "javascript"
+  ],
+  "author": "FIUS Development | Killer Boss Original - EnyGasELuce",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/FIUSDevelopment/std/issues"
+  },
+  "homepage": "https://github.com/FIUSDevelopment/std#readme"
+}
