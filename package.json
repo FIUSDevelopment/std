@@ -1,6 +1,6 @@
 {
   "name": "@fiusdevelopment/std",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Standard module for javascript",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/FIUSDevelopment/std/issues"
   },
-  "homepage": "https://github.com/FIUSDevelopment/std#readme"
+  "homepage": "https://github.com/FIUSDevelopment/std#readme",
+  "dependencies": {
+    "@fiusdevelopment/readline": "^0.0.2"
+  }
 }

@@ -1,7 +1,6 @@
 const { writeFile, readFile, mkdir } = require('node:fs/promises');
-const readline = require ('node:readline/promises');
 const { stdin, stdout } = require('node:process');
-var readlineSync = require('readline-sync');
+var readlineSync = require('@fiusdevelopment/readline');
 var name;
 
 function getTime () {
