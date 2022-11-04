@@ -1,6 +1,6 @@
 {
   "name": "@fiusdevelopment/std",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Standard module for javascript",
   "main": "index.js",
   "scripts": {
