@@ -52,4 +52,4 @@ async function cout (string) {
     log(string);
 };
 
-module.exports = { cin, createCin, cout, createLog, log };
+module.exports = { cin, cout, createLog, log };
