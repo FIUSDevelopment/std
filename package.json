@@ -1,6 +1,6 @@
 {
-  "name": "@fiusdevelopment/std",
-  "version": "0.0.5",
+  "name": "@thundernetworkrad/std",
+  "version": "2022.12.29",
   "description": "Standard module for javascript",
   "main": "index.js",
   "scripts": {
@@ -18,13 +18,13 @@
     "module",
     "javascript"
   ],
-  "author": "FIUS Development | Killer Boss Original - EnyGasELuce",
+  "author": "Thunder Network RaD | Killer Boss Original",
   "license": "SEE LICENSE IN LICENSE.txt",
   "bugs": {
     "url": "https://github.com/FIUSDevelopment/std/issues"
   },
   "homepage": "https://github.com/FIUSDevelopment/std#readme",
   "dependencies": {
-    "@fiusdevelopment/readline": "^0.0.2"
+    "readline-sync": "^1.4.10"
   }
 }

@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-          scope: '@fiusdevelopment'
+          scope: '@thundernetworkrad'
       - name: Install dependencies 🔧
         run: npm ci
       - name: Publish package on NPM 📦
@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@fiusdevelopment'
+          scope: '@thundernetworkrad'
       - name: Install dependencies 🔧
         run: npm ci
       - name: Publish package on NPM 📦
@@ -41,4 +41,4 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GP_TOKEN }}
           REGISTRY1: 'npm.pkg.github.com'
-          REGISTRY2: '@fiusdevelopment:registry=https://npm.pkg.github.com'
+          REGISTRY2: '@thundernetworkrad:registry=https://npm.pkg.github.com'
