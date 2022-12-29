@@ -14,8 +14,6 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
           scope: '@thundernetworkrad'
-      - name: Install dependencies 🔧
-        run: npm ci
       - name: Publish package on NPM 📦
         run: npm publish --access public
         env:
@@ -34,8 +32,6 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@thundernetworkrad'
-      - name: Install dependencies 🔧
-        run: npm ci
       - name: Publish package on NPM 📦
         run: npm publish --access public
         env:
