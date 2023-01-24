@@ -1,7 +1,10 @@
-const { writeFile, readFile, mkdir } = require('node:fs/promises');
-const { stdin, stdout } = require('node:process');
+const { appendFile, existsSync } = require('node:fs');
+const { mkdir } = require('node:fs/promises')
 var readlineSync = require('readline-sync');
-var name, debug, logs1;
+var debug, logs1;
+
+let time = getTime()
+const name = `${time.year}.${time.month}.${time.day}.${time.hours}.${time.minutes}.${time.seconds}.log`;
 
 function getTime () {
     const date_time = new Date();
@@ -14,20 +17,12 @@ function getTime () {
     return({year, month, day, hours, minutes, seconds})
 };
 
-function createLog () {
-    mkdir('./logs', { recursive: true });
-    var time = getTime();
-    name = `${time.year}.${time.month}.${time.day}.${time.hours}.${time.minutes}.${time.seconds}.log`;
-    writeFile(`./logs/${name}`, '');
-    return(name)
-};
-
 function log (string) {
-    readFile(`./logs/${name}`, 'utf8')
-    .then(async (err, data) => {
-        if (!data) data = '';
-        data += string + '\n';
-        writeFile(`./logs/${name}`, data);
+    if (!existsSync('./logs')) mkdir('./logs', { recursive: true });
+    appendFile(`./logs/${name}`, string+'\n', err => {
+        if (err) {
+            throw err
+        }
     })
 };
 
@@ -60,11 +55,11 @@ class createCout {
         if (debug >= debugLevel) {
             console.log(`[${time.year}.${time.month}.${time.day}-${time.hours}:${time.minutes}:${time.seconds}] | ${String(string)}`);
             if (logs1) {
-                log(string);
+                log(`[${time.year}.${time.month}.${time.day}-${time.hours}:${time.minutes}:${time.seconds}] | ${String(string)}`);
             }
         }
         return;
     };
 }
 
-module.exports = { cin, createCout, createLog, log };
+module.exports = { cin, createCout, log };

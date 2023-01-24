@@ -1,8 +1,8 @@
 Work IN PROGRESS
 
 ```js
-require('@thundernetworkrad/std').cin('Question')
-.then((response) => {
+const { cin } = require('@thundernetworkrad/std');
+cin('Question').then((response) => {
     console.log(response)
 })
 ```
@@ -10,7 +10,7 @@ require('@thundernetworkrad/std').cin('Question')
 ```js
 const { createCout } = require('@thundernetworkrad/std');
 
-let ccout = new createCout(0); // debugLevel 
+let ccout = new createCout(0, true); // debugLevel, logs enabled (file)
 
 let cout = ccout.cout;
 

@@ -1,6 +1,6 @@
 {
   "name": "@thundernetworkrad/std",
-  "version": "2023.01.24-3",
+  "version": "2023.01.24-4",
   "description": "Standard module for javascript",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/FIUSDevelopment/std#readme",
   "dependencies": {
-    "readline-sync": "^1.4.10"
+    "@thundernetworkrad/readline-sync": "^2023.1.10"
   }
 }
