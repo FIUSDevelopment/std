@@ -1,7 +1,7 @@
 const { writeFile, readFile, mkdir } = require('node:fs/promises');
 const { stdin, stdout } = require('node:process');
 var readlineSync = require('readline-sync');
-var name;
+var name, debug, logs1;
 
 function getTime () {
     const date_time = new Date();
@@ -47,17 +47,19 @@ function cin (question, hide) {
 
 class createCout {
     constructor (debugLevel, logs) {
-        this.debug = debugLevel;
-        this.logs = logs;
+        debug = debugLevel;
+        logs1 = logs;
+        console.log(debug, logs1)
     }
 
     cout (string, debugLevel) {
+        console.log(debug, logs1)
         if (!debugLevel) debugLevel = 0;
         var time = getTime();
 
-        if (this.debug >= debugLevel) {
+        if (debug >= debugLevel) {
             console.log(`[${time.year}.${time.month}.${time.day}-${time.hours}:${time.minutes}:${time.seconds}] | ${String(string)}`);
-            if (this.logs) {
+            if (logs1) {
                 log(string);
             }
         }
