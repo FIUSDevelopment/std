@@ -1,6 +1,6 @@
 const { appendFile, existsSync } = require('node:fs');
 const { mkdir } = require('node:fs/promises')
-var readlineSync = require('readline-sync');
+var readlineSync = require('@thundernetworkrad/readline-sync');
 var debug, logs1;
 
 let time = getTime()
