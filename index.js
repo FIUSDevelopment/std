@@ -65,4 +65,4 @@ class createCout {
     };
 }
 
-module.exports = { cin, cout, createLog, log };
+module.exports = { cin, createCout, createLog, log };
