@@ -47,13 +47,13 @@ function cin (question, hide) {
 
 class createCout {
     constructor (debugLevel, logs) {
+        if (!debugLevel) debugLevel = 0;
+        if (!logs) logs = false;
         debug = debugLevel;
         logs1 = logs;
-        console.log(debug, logs1)
     }
 
     cout (string, debugLevel) {
-        console.log(debug, logs1)
         if (!debugLevel) debugLevel = 0;
         var time = getTime();
 
