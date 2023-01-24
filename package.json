@@ -1,6 +1,6 @@
 {
   "name": "@thundernetworkrad/std",
-  "version": "2023.01.24.1",
+  "version": "2023.01.24.2",
   "description": "Standard module for javascript",
   "main": "index.js",
   "scripts": {
