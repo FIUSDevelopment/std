@@ -45,11 +45,24 @@ function cin (question, hide) {
     })
 };
 
-async function cout (string) {
-    var time = getTime();
-    string = `[${time.year}.${time.month}.${time.day}-${time.hours}:${time.minutes}:${time.seconds}] | ${String(string)}`
-    console.log(string);
-    log(string);
-};
+class createCout {
+    constructor (debugLevel, logs) {
+        this.debug = debugLevel;
+        this.logs = logs;
+    }
+
+    cout (string, debugLevel) {
+        if (!debugLevel) debugLevel = 0;
+        var time = getTime();
+
+        if (this.debug >= debugLevel) {
+            console.log(`[${time.year}.${time.month}.${time.day}-${time.hours}:${time.minutes}:${time.seconds}] | ${String(string)}`);
+            if (this.logs) {
+                log(string);
+            }
+        }
+        return;
+    };
+}
 
 module.exports = { cin, cout, createLog, log };
