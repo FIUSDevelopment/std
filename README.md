@@ -5,14 +5,14 @@ Standard module for NodeJS / TypeScript
 Note: TypeScript support is in testing
 
 ```js
-const { cin } = require('@thundernetworkrad/std');
+import { cin } from '@thundernetworkrad/std';
 cin('Question').then((response) => {
     console.log(response)
 })
 ```
 
 ```js
-const { createCout } = require('@thundernetworkrad/std');
+import { createCout } from '@thundernetworkrad/std';
 
 let ccout = new createCout(0, true); // debugLevel, logs enabled (file) (like using log() )
 
@@ -22,13 +22,13 @@ cout('test', 0) // console.log day, time and the string, if the number is >= to 
 ```
 
 ```js
-const { log } = require('@thundernetworkrad/std');
+import { log } from '@thundernetworkrad/std';
 
 log('test') // create a file at the first log, add the string to the log
 ```
 
 ```js
-const { getTime } = require('@thundernetworkrad/std');
+import { getTime } from '@thundernetworkrad/std';
 
 let time = getTime() // return { year, month, day, hours, minutes, seconds }
 ```
