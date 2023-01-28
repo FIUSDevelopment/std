@@ -1,8 +1,9 @@
 {
   "name": "@thundernetworkrad/std",
-  "version": "2023.01.28-1",
+  "version": "2023.01.28-2",
   "description": "Standard module for javascript",
   "main": "build/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "install": "tsc"
