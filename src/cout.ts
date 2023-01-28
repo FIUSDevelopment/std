@@ -2,6 +2,11 @@ let debug: number, logs1: boolean|undefined|null;
 import getTime from './getTime.js';
 import log from './log.js';
 export default class createCout {
+    /**
+     * @constructor
+     * @param debugLevel from what debug level you want to log?
+     * @param logs do you want files log?
+     */
     constructor (debugLevel: number, logs?: boolean) {
         if (!debugLevel) debugLevel = 0;
         if (!logs) logs = false;
@@ -9,6 +14,12 @@ export default class createCout {
         logs1 = logs;
     }
 
+    /**
+     * 
+     * @param string what to log?
+     * @param debugLevel from what debug level this will logged?
+     * @returns 
+     */
     cout (string: string, debugLevel?: number) {
         if (!debugLevel) debugLevel = 0;
         var time = getTime();

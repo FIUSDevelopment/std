@@ -1,6 +1,11 @@
 import readlineSync from '@thundernetworkrad/readline-sync';
-
-export default (question: string, hide: boolean) => {
+/**
+ * 
+ * @param question what question you need to make?
+ * @param hide is the question private?
+ * @returns 
+ */
+function cin (question: string, hide: boolean) {
     return new Promise((resolve) => {
         try {
             let answer: string = readlineSync.question(`${question} `, {
@@ -13,3 +18,5 @@ export default (question: string, hide: boolean) => {
         }
     })
 };
+
+export default cin;

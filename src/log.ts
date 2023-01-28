@@ -7,7 +7,11 @@ const startTime = getTime();
 time = startTime;
 const name = `${time.year}.${time.month}.${time.day}.${time.hours}.${time.minutes}.${time.seconds}.log`;
 
-export default (string?: string) => {
+/**
+ * 
+ * @param string to log
+ */
+function log (string?: string) {
     if (!existsSync('./logs')) mkdir('./logs', { recursive: true });
 
     appendFile(`./logs/${name}`, string+'\n', (err: any) => {
@@ -16,3 +20,5 @@ export default (string?: string) => {
         }
     })
 };
+
+export default log;
