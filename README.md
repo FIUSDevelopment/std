@@ -2,8 +2,6 @@
 
 Standard module for NodeJS / TypeScript
 
-Note: TypeScript support is in testing
-
 ```js
 import { cin } from '@thundernetworkrad/std';
 cin('Question').then((response) => {

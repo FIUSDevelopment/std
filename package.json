@@ -1,16 +1,15 @@
 {
   "name": "@thundernetworkrad/std",
-  "version": "2023.01.28-2",
-  "description": "Standard module for javascript",
+  "version": "2023.01.29",
+  "description": "Standard module for JavaScript / TypeScript",
   "main": "build/index.js",
   "types": "dist/index.d.ts",
-  "type": "module",
   "scripts": {
     "install": "tsc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FIUSDevelopment/std.git"
+    "url": "git+https://github.com/ThunderNetworkRaD/std.git"
   },
   "keywords": [
     "std",
@@ -23,12 +22,13 @@
   "author": "Thunder Network RaD | Killer Boss Original",
   "license": "SEE LICENSE IN LICENSE.txt",
   "bugs": {
-    "url": "https://github.com/FIUSDevelopment/std/issues"
+    "url": "https://github.com/ThunderNetworkRaD/std/issues"
   },
-  "homepage": "https://github.com/FIUSDevelopment/std#readme",
+  "homepage": "https://github.com/ThunderNetworkRaD/std#readme",
   "dependencies": {
     "@thundernetworkrad/readline-sync": "^2023.1.26-2",
     "@types/node": "^18.11.18",
+    "tslib": "^2.5.0",
     "typescript": "^4.9.4"
   }
 }
