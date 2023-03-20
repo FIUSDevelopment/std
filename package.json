@@ -33,6 +33,6 @@
     "node-cin": "^2023.2.5",
     "node-cout": "^2023.2.5-1",
     "tslib": "^2.5.0",
-    "typescript": "^4.9.4"
+    "typescript": "^5.0.2"
   }
 }
