@@ -29,7 +29,7 @@
     "@thundernetworkrad/logs": "^2023.2.5-1",
     "@thundernetworkrad/readline-sync": "^2023.1.26-2",
     "@thundernetworkrad/time": "^2023.2.5-2",
-    "@types/node": "^18.11.18",
+    "@types/node": "^20.3.0",
     "node-cin": "^2023.2.5",
     "node-cout": "^2023.2.5-1",
     "tslib": "^2.5.0",
